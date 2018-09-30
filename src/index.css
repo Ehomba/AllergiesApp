@@ -3,3 +3,33 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.card{
+  height: 750px;
+}
+
+.card-stacked {
+  display: inline-block;
+}
+
+.card .card-content {
+  padding: 15px 25px !important;
+}
+.card-action {
+padding: 5px 25px !important;
+}
+
+#input-username {
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+#input-password {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+#login-button {
+  margin: 0 auto;
+  margin-top: 100px;
+}
