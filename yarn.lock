@@ -1454,10 +1454,6 @@ braces@^2.3.0, braces@^2.3.1:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-breeze@0.4.x:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/breeze/-/breeze-0.4.0.tgz#de70bc3ab235a775f59e7d6ee97f4e9023140571"
-
 brorand@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/brorand/-/brorand-1.1.0.tgz#12c25efe40a45e3c323eb8675a0a0ce57b22371f"
@@ -2646,14 +2642,6 @@ dotenv@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.0.0.tgz#24e37c041741c5f4b25324958ebbc34bca965935"
 
-dragonfly@0.2.x:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/dragonfly/-/dragonfly-0.2.1.tgz#d2709d0a842c80147be733e209279e0bb5625717"
-
-drip@0.3.x:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/drip/-/drip-0.3.1.tgz#a690a12c0ae2299046558f94cad1475d36746486"
-
 duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
@@ -3387,10 +3375,6 @@ fill-range@^4.0.0:
     is-number "^3.0.0"
     repeat-string "^1.6.1"
     to-regex-range "^2.1.0"
-
-filtr@0.3.x:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/filtr/-/filtr-0.3.0.tgz#957f8382e72a9efd97502150aa8cc6f488f9c62c"
 
 finalhandler@1.1.1:
   version "1.1.1"
@@ -6143,10 +6127,6 @@ nwsapi@^2.0.7:
   version "2.0.9"
   resolved "https://registry.yarnpkg.com/nwsapi/-/nwsapi-2.0.9.tgz#77ac0cdfdcad52b6a1151a84e73254edc33ed016"
 
-oath@0.2.x:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/oath/-/oath-0.2.3.tgz#cd44fc6124fcf9cb65aca60eba05c51f3da0019e"
-
 oauth-sign@~0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.8.2.tgz#46a6ab7f0aead8deae9ec0565780b7d4efeb9d43"
@@ -7726,18 +7706,6 @@ scss-tokenizer@^0.2.3:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
 
-"seed@node scripts/seedDB.js":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/seed/-/seed-0.4.4.tgz#750c371289d94527c6eb6541d85a8d81bd93d2f3"
-  dependencies:
-    breeze "0.4.x"
-    dragonfly "0.2.x"
-    drip "0.3.x"
-    filtr "0.3.x"
-    oath "0.2.x"
-    sol "0.3.x"
-    super "0.2.x"
-
 select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
@@ -7947,10 +7915,6 @@ sockjs@0.3.19:
   dependencies:
     faye-websocket "^0.10.0"
     uuid "^3.0.1"
-
-sol@0.3.x:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/sol/-/sol-0.3.0.tgz#99ded0367e5d58b4c5bf4f873260a7a1ea8fd611"
 
 sort-keys@^1.0.0:
   version "1.1.2"
@@ -8226,10 +8190,6 @@ style-loader@0.19.0:
   dependencies:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
-
-super@0.2.x:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/super/-/super-0.2.3.tgz#a6695c1dce00ff58432a63e8b9ce268932b42c61"
 
 superagent@^4.0.0-beta.5:
   version "4.0.0-beta.5"
