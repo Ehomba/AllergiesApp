@@ -6,7 +6,7 @@ class Register extends React.Component {
     render() {
         return (
 
-          <div classname="container" id="register">
+      <div classname="container" id="register">
         <h4>Registration</h4>
         <div id="register-page" className="row">
           <div className="col s12 z-depth-6 card-panel">
