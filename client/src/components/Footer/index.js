@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = props => (
 
-    <footer class="page-footer">
+    <footer class="page-footer teal lighten-2">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">

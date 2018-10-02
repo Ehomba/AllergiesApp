@@ -20,7 +20,7 @@ const Navbar = props => (
                 <li><Link to="/settings">Settings</Link></li>
 
                 <li><Link to="/">Log Out</Link></li>
-                
+
             </ul>
 
         </div>
