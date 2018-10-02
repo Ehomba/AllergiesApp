@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-class Settings extends React.Component {
+class  extends React.Component {
 
 
 
