@@ -2,15 +2,15 @@
 
 const express = require('express');
 const router = express.Router();
-import bodyParser from 'body-parser';
+
 
 import basicAuth from '../lib/basic-auth-middleware.js'
 import User from '../model/user.js';
-import { builtinModules } from 'module';
 
 
 
-router.post('/signup', jsonParser, (req, res, next) => {
+
+router.post('/signup',  (req, res, next) => {
   console.log('hit /api/signup')
 
   User.create(req.body)
