@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Register from './components/Register';
+import Footer from './components/Footer';
 import './App.css';
 
 const App = () => (
@@ -17,8 +18,12 @@ const App = () => (
       {/* <Route exact path="/journal" component={Journal} /> */}
       {/* <Route exact path="/settings" component={Settings} /> */}
 
+      <Footer />
+
     </div>
+
   </Router>
+
 );
 
 export default App;
