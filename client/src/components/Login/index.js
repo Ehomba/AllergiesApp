@@ -12,7 +12,6 @@ class Login extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col s12 m12 l12">
-                <h2 className="header">Nosenews</h2>
                 <div className="card horizontal">
                   <div className="card-image">
                     <img alt="fall nature scene" src="https://lorempixel.com/600/780/nature/6" />
@@ -32,12 +31,3 @@ class Login extends React.Component {
     }
 
     export default Login;
-
-
-
-
-
-    /* 
-                   
-                    
-    */
