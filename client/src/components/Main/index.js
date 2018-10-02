@@ -15,7 +15,7 @@ class Main extends React.Component {
                 <h2 className="header">Nosenews</h2>
                 <div className="card horizontal">
                   <div className="card-image">
-                    <img src="https://lorempixel.com/600/780/nature/6" />
+                    <img alt="fall nature scene" src="https://lorempixel.com/600/780/nature/6" />
                   </div>
                   <div className="card-stacked">
                     <Form />
