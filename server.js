@@ -5,7 +5,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
-const apiRoutes = require('route/user.routes.js');
+const apiRoutes = require('./route/user.js');
 // require('./src/lib/server').start();
 
 const app = express();
