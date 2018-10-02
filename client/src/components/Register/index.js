@@ -5,7 +5,7 @@ class Register extends React.Component {
  
     render() {
         return (
-<div>
+<div class="register-body">
 <h4>Registration</h4>
   <div id="register-page" class="row">
     <div class="col s12 z-depth-6 card-panel">
