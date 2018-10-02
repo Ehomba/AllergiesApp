@@ -8,6 +8,7 @@ import './App.css';
 
 const App = () => (
   <Router>
+
     <div>
 
       <Navbar />
