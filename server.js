@@ -4,7 +4,7 @@ const cors = require('cors');
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-
+const path = require('path');
 
 // require('./src/lib/server').start();
 
@@ -24,9 +24,10 @@ app.use(bodyParser.json()
 
 app.use(require('./route'));
 
-app.all('*', (request, response) => {
-  console.log('Returning a 404 from the catch-all route');
-  return response.sendStatus(404);
+app.get('*', (request, response) => {
+  
+  res.sendFile(path.join(__dirname + 'client/build/index.html'));
+ 
 });
 
 // Connect to the Mongo DB
