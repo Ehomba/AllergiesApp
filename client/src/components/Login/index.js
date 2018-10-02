@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from '../Form';
 
-class Main extends React.Component {
+class Login extends React.Component {
     // constructor(props) {
     //   super(props);
     // }
@@ -12,7 +12,6 @@ class Main extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col s12 m12 l12">
-                <h2 className="header">Nosenews</h2>
                 <div className="card horizontal">
                   <div className="card-image">
                     <img alt="fall nature scene" src="https://lorempixel.com/600/780/nature/6" />
@@ -31,13 +30,4 @@ class Main extends React.Component {
       };
     }
 
-    export default Main;
-
-
-
-
-
-    /* 
-                   
-                    
-    */
+    export default Login;

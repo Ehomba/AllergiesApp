@@ -34,6 +34,7 @@ padding: 5px 25px !important;
   margin-top: 100px;
 }
 
+<<<<<<< HEAD
 #register {
   width: 50%;
   margin: 0 auto;
@@ -63,3 +64,9 @@ padding: 5px 25px !important;
 }
 
 
+=======
+/* Navbar CSS */
+nav a {
+  color: black !important;
+}
+>>>>>>> 53da04e1e9146918b9793a6cd084e705d557a91f
