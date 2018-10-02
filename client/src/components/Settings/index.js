@@ -1,6 +1,8 @@
 import React from 'react';
 import Slide from './components/Slide';
 
+//asdfasdfasfasdfasdfsadf
+
 class Settings extends React.Component {
 
 
