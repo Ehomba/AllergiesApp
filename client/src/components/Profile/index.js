@@ -12,7 +12,7 @@ class Settings extends React.Component {
     render() {
         return (
     
-
+            Header
                   
              <div class="row">
                 <div class="col s12 m6">
