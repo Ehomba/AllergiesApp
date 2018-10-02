@@ -2,10 +2,10 @@
 
 const express = require('express');
 const router = express.Router();
+const User = require('../model/user.js');
+const basicAuth = require('../lib/basic-auth-middleware.js');
 
 
-import basicAuth from '../lib/basic-auth-middleware.js'
-import User from '../model/user.js';
 
 
 
