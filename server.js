@@ -24,11 +24,9 @@ app.use(bodyParser.json()
   // ,cors()
 );
 
-
-
 app.get('*', (request, response) => {
 
-  res.sendFile(path.join(__dirname + 'client/build/index.html'));
+  res.sendFile(path.join(__dirname + 'client/public/index.html'));
 
 });
 app.use('/api', apiRoutes);
