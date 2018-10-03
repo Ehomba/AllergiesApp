@@ -5,7 +5,8 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Footer from './components/Footer';
 import './App.css';
-
+import Settings from '/components/Settings';
+import Profile from '/components/Profile';
 const App = () => (
   <Router>
 
@@ -15,6 +16,8 @@ const App = () => (
 
       <Route exact path="/" component={Login} />
       <Route exact path="/register" component={Register} />
+      <Route exact path="/settings" component={Settings} />
+      <Route exact path="/Profile" component={Profile} />
       {/* <Route exact path="/profile" component={Profile} /> */}
       {/* <Route exact path="/journal" component={Journal} /> */}
       {/* <Route exact path="/settings" component={Settings} /> */}
