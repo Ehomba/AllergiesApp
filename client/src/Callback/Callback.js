@@ -1,18 +1,18 @@
-// // src/Callback/Callback.js
+// src/Callback/Callback.js
 
-// import React, { Component } from 'react';
-// import loading from './loading.svg';
+import React, { Component } from 'react';
+import loading from './loading.svg';
 
-// class Callback extends Component {
-//     render() {
-//         const style = //...
+class Callback extends Component {
+    render() {
+        const style = //...
 
-//     return (
-//             <div style={style}>
-//                 <img src={loading} alt="loading" />
-//             </div>
-//         );
-//     }
-// }
+    return (
+            <div style={style}>
+                <img src={loading} alt="loading" />
+            </div>
+        );
+    }
+}
 
-// export default Callback;
+export default Callback;

@@ -5,8 +5,8 @@ import history from '../history';
 
 export default class Auth {
   auth0 = new auth0.WebAuth({
-    domain: 'YOUR_AUTH0_DOMAIN',
-    clientID: 'YOUR_CLIENT_ID',
+    domain: 'https://allergy3.auth0.com/login?client=5bb501e61408f62d1aed6ec2',
+    clientID: '5bb501e61408f62d1aed6ec2',
     redirectUri: 'http://localhost:3000/callback',
     responseType: 'token id_token',
     scope: 'openid'
