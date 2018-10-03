@@ -27,19 +27,19 @@ app.use(bodyParser.json()
 
 
 app.get('*', (request, response) => {
-  
+
   res.sendFile(path.join(__dirname + 'client/build/index.html'));
- 
+
 });
 app.use('/api', apiRoutes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userList");
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userList");
 
 // error middleware
 // app.use(require('./error-middleware'));
 
 
-app.listen(PORT, () =>{
+app.listen(PORT, () => {
   console.log(`Listening on port: ${PORT}`)
 });
