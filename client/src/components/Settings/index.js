@@ -11,12 +11,14 @@ class Settings extends React.Component {
                 <div className="row">
                     <div className="col s6 offset-s6">
                         <table>
-                            <tr>
-                                <td className="severity">No Reaction</td>
-                                <td className="severity">Mild</td>
-                                <td className="severity">Moderate</td>
-                                <td className="severity">Life-Threatening</td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td className="severity">No Reaction</td>
+                                    <td className="severity">Mild</td>
+                                    <td className="severity">Moderate</td>
+                                    <td className="severity">Life-Threatening</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -27,14 +29,14 @@ class Settings extends React.Component {
                         <Slide />
                     </div>
                 </div>
-                
+
                 <div className="row">
                     <div className="col s6 allergen">Pollen</div>
                     <div className="col s6">
                         <Slide />
                     </div>
                 </div>
-                
+
                 <div className="row">
                     <div className="col s6 allergen">Cedar</div>
                     <div className="col s6">
@@ -48,7 +50,9 @@ class Settings extends React.Component {
                         <Slide />
                     </div>
                 </div>
-            
+
+
+
                 <div className="row">
                     <div className="col s12">
                         <div className="card blue-grey darken-1">
@@ -58,18 +62,20 @@ class Settings extends React.Component {
                                 I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div className="card-action">
-                            <Link to="">This is a link</Link>
-                            <Link to="">This is a link</Link>
+                                <Link to="">This is a link</Link>
+                                <Link to="">This is a link</Link>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
+
+
             </div>
         );
-      };
+    };
 
 }
 
 
-    
+
 export default Settings;
