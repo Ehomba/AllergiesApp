@@ -6,8 +6,6 @@ const User = require('../model/user.js');
 // const basicAuth = require('../lib/basic-auth-middleware.js');
 
 
-
-
 router.get('/here', function(req, res, next) {
   User.find(function (err, response) {
     if (err) return next(err);
