@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = props => (
 
-    <nav>
+    <nav className="navbar">
+
         <div className="nav-wrapper">
 
             <Link className="brand-logo" to="/profile">Nose News</Link>

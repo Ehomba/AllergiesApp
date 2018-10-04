@@ -15,7 +15,7 @@ const Form = props => (
       </div>
     </div>
     <div className="row center-align">
-      <button className="btn waves-effect waves-light" id="login-button" type="submit" name="action">Login
+      <button className="btn waves-effect waves-light amber accent-4" id="login-button" type="submit" name="action">Login
         <i className="material-icons right">send</i>
       </button>
     </div>

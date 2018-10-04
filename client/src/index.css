@@ -1,8 +1,52 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #00bcd4, #bbdefb, #23A6D5, #1de9b6);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  font-family: 'Playfair Display', serif;
 }
+
+/*background animation*/
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+/*end of background animation*/
 
 .card{
   height: 750px;
@@ -17,6 +61,36 @@ body {
 }
 .card-action {
 padding: 5px 25px !important;
+}
+
+.input-field input[type=text] {
+  border-bottom: 1px solid #CAE4DB;;
+  box-shadow: 0 1px 0 0 #CAE4DB;
+}
+
+.input-field input[type=text]:hover {
+  border-bottom: 1px solid #7A9D9D; ;
+  box-shadow: 0 1px 0 0 #7A9D9D;;
+}
+
+#input-username[type=text]:enabled {
+  border-bottom: 1px solid #DCAE1D;;
+  box-shadow: 0 1px 0 0 #DCAE1D;;
+}
+
+#input-username[type=text]:hover {
+  border-bottom: 1px solid white;;
+  box-shadow: 0 1px 0 0 white;;
+}
+
+#input-password[type=password]:enabled {
+  border-bottom: 1px solid #0d47a1;;
+  box-shadow: 0 1px 0 0 #0d47a1;;
+}
+
+#input-password[type=password]:hover {
+  border-bottom: 1px solid #CAE4DB;;
+  box-shadow: 0 1px 0 0 #CAE4DB;;
 }
 
 #input-username {
@@ -34,6 +108,11 @@ padding: 5px 25px !important;
   margin-top: 100px;
 }
 
+#login-container {
+  margin-top: 25px;
+}
+
+/*register page*/
 #register {
   width: 50%;
   margin: 0 auto;
@@ -64,6 +143,28 @@ padding: 5px 25px !important;
 
 
 /* Navbar CSS */
-nav a {
-  color: black !important;
+.brand-logo {
+  margin-left: 10px;
+  font-style: bold;
+  font-size: 72px;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 72px;
+}
+
+/* Footer CSS */
+.page-footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
