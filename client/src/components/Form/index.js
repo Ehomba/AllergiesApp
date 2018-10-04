@@ -4,7 +4,7 @@ const Form = props => (
     <div className="card-content">
     <div className="row center-align">
       <div className="input-field col s12 center-align" id="input-username">
-        <input id="email" type="email" className="validate" />
+        <input id="username" type="text" className="validate" />
         <label htmlFor="username">Username</label>
       </div>
     </div>

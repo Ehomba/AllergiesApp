@@ -48,8 +48,10 @@ body {
 }
 /*end of background animation*/
 
+/*login*/
 .card{
   height: 750px;
+  margin-top: 25px;
 }
 
 .card-stacked {
@@ -63,40 +65,36 @@ body {
 padding: 5px 25px !important;
 }
 
-.input-field input[type=text] {
-  border-bottom: 1px solid #CAE4DB;;
-  box-shadow: 0 1px 0 0 #CAE4DB;
+#password[type=password]:enabled {
+  border-bottom: 1px solid black;;
+  box-shadow: 0 1px 0 0 black;;
 }
 
-.input-field input[type=text]:hover {
-  border-bottom: 1px solid #7A9D9D; ;
-  box-shadow: 0 1px 0 0 #7A9D9D;;
+#password[type=password]:hover {
+  border-bottom: 1px solid pink;;
+  box-shadow: 0 1px 0 0 pink;;
 }
 
-#input-username[type=text]:enabled {
-  border-bottom: 1px solid #DCAE1D;;
-  box-shadow: 0 1px 0 0 #DCAE1D;;
+#username[type=text]:enabled {
+  border-bottom: 1px solid black;;
+  box-shadow: 0 1px 0 0 black;;
 }
 
-#input-username[type=text]:hover {
-  border-bottom: 1px solid white;;
-  box-shadow: 0 1px 0 0 white;;
-}
-
-#input-password[type=password]:enabled {
-  border-bottom: 1px solid #0d47a1;;
-  box-shadow: 0 1px 0 0 #0d47a1;;
-}
-
-#input-password[type=password]:hover {
-  border-bottom: 1px solid #CAE4DB;;
-  box-shadow: 0 1px 0 0 #CAE4DB;;
+#username[type=text]:hover {
+  border-bottom: 1px solid pink;;
+  box-shadow: 0 1px 0 0 pink;;
 }
 
 #input-username {
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 50px;
 }
+
+#nose-icon {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
 
 #input-password {
   margin: 0 auto;
@@ -111,36 +109,33 @@ padding: 5px 25px !important;
 #login-container {
   margin-top: 25px;
 }
+/*end of login*/
 
 /*register page*/
 #register {
   width: 50%;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 75px;
+}
+
+#register-page {
+  z-index: 100;
 }
 
 #register-btn {
   margin: 0 auto;
 }
 
-.register-body {
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ), url("http://www.freegreatpicture.com/files/59/26908-high-resolution-photo-flowers.jpg") no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -100;
+.material-icons {
+  color: #000000;
 }
 
+#nose-icon2 {
+  margin: 0 auto;
+  margin-top: 20px;
 /* Settings Component */
+}
+
 .allergen {
   text-align: right;
 }
@@ -148,8 +143,7 @@ padding: 5px 25px !important;
 /* Navbar CSS */
 .brand-logo {
   margin-left: 10px;
-  font-style: bold;
-  font-size: 72px;
+  font-size: 200px;
 }
 
 .navbar {
