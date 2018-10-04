@@ -10,6 +10,11 @@ class Register extends React.Component {
         <div id="register-page" className="row">
           <div className="col s12 z-depth-6 card-panel">
             <form className="register-form">
+            <div className="row center-align">
+                  <div className="col s12" id="nose-icon2">
+                  <img alt="nose icon" src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/nose.png" width="50px" height="50px" />
+                  </div>
+                </div>
               <div className="row margin">
                 <div className="input-field col s12">
                   <i className="material-icons prefix">account_circle</i>
@@ -38,14 +43,9 @@ class Register extends React.Component {
                   <label htmlFor="confirm_pass">Re-type password</label>
                 </div>
               </div>
-              <div className="row">
+              <div className="row center-align">
                 <div className="input-field col s12">
-                  <a href="register.html" className="btn waves-effect waves-light col s12" id="register-btn">Register Now</a>
-                </div>
-                <div className="input-field col s12">
-                  <p className="margin center medium-small sign-up">Already have an account?
-                    <a href="login.php">Login</a>
-                  </p>
+                  <a href="#" className="btn waves-effect waves-light amber accent-4 hoverable col s6" id="register-btn">Register Now</a>
                 </div>
               </div>
             </form>
