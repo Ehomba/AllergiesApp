@@ -26,8 +26,7 @@ app.use(bodyParser.json()
 
 app.get('*', (req, res) => {
 
-  res.sendFile(path.join(__dirname + '/client/public/index.html'));
-
+  res.sendFile(path.join(__dirname + 'client/public/index.html'));
 });
 
 app.use('/api', apiRoutes);

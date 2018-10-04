@@ -6,7 +6,7 @@ class Login extends React.Component {
   // constructor(props) {
   //   super(props);
   // }
-  
+
   render() {
     return (
       <div className="container">
@@ -26,7 +26,7 @@ class Login extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   };
 
 }

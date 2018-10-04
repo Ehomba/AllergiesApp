@@ -6,6 +6,7 @@ import Register from './components/Register';
 import Footer from './components/Footer';
 import './App.css';
 
+
 const App = () => (
   <Router>
 

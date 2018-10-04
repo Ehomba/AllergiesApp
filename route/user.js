@@ -8,7 +8,12 @@ const User = require('../model/user.js');
 
 
 
-
+router.get('/here', function(req, res, next) {
+  User.find(function (err, response) {
+    if (err) return next(err);
+    console.log(res.json(response));
+  });
+});
 
 router.post('/signup', (req, res, next) => {
   console.log('hit /api/signup')
