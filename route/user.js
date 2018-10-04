@@ -10,11 +10,14 @@ const User = require('../model/user.js');
 
 
 
-router.post('/signup', (req, res, next) => {
-  console.log('hit /api/signup')
+router.post('/api/register', (req, res, next) => {
+  console.log(' -------------- hit /api/signup')
 
   User.create(req.body)
-    .then(token => res.send(token))
+    .then(token => {
+      console.log("created user");
+      res.send(token);
+    })
     .catch(next)
 })
 
