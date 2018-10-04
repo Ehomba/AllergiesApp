@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 const Navbar = props => (
 
     <nav className="navbar">
+
         <div className="nav-wrapper">
 
-            <Link className="brand-logo" to="/">Nose News</Link>
+            <Link className="brand-logo" to="/profile">Nose News</Link>
 
             <ul id="nav-mobile" className="right hide-on-med-and-down">
 
