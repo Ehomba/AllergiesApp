@@ -1,5 +1,6 @@
 import React from 'react';
 import API from "../../utils/API";
+import { Link } from "react-router-dom"
 
 class Register extends React.Component {
 
@@ -82,7 +83,7 @@ class Register extends React.Component {
               </div>
               <div className="row center-align">
                 <div className="input-field col s12">
-                  <a href="register.html" className="btn waves-effect waves-light amber accent-4  col s12" id="register-btn" disabled={!(this.state.password === this.state.passwordMatch)} onClick={this.handleFormSubmit} >Register Now</a>
+                  <Link to="/profile" className="btn waves-effect waves-light amber accent-4  col s12" id="register-btn" disabled={!(this.state.password === this.state.passwordMatch)} onClick={this.handleFormSubmit} >Register Now</Link>
                 </div>
               </div>
             </form>
