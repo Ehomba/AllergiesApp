@@ -8,28 +8,28 @@ class Settings extends React.Component {
         return (
             <div>
                 <div className="row">
-                    <div className="col s6">Mold</div>
+                    <div className="col s6 allergen">Mold</div>
                     <div className="col s6">
                         <Slide />
                     </div>
                 </div>
                 
                 <div className="row">
-                    <div className="col s6">Pollen</div>
+                    <div className="col s6 allergen">Pollen</div>
                     <div className="col s6">
                         <Slide />
                     </div>
                 </div>
                 
                 <div className="row">
-                    <div className="col s6">Cedar</div>
+                    <div className="col s6 allergen">Cedar</div>
                     <div className="col s6">
                         <Slide />
                     </div>
                 </div>
 
                 <div className="row">
-                    <div className="col s6">Dust Mites</div>
+                    <div className="col s6 allergen">Dust Mites</div>
                     <div className="col s6">
                         <Slide />
                     </div>
