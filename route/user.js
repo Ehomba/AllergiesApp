@@ -5,14 +5,6 @@ const router = express.Router();
 const User = require('../model/user.js');
 // const basicAuth = require('../lib/basic-auth-middleware.js');
 
-
-router.get('/here', function(req, res, next) {
-  User.find(function (err, response) {
-    if (err) return next(err);
-    console.log(res.json(response));
-  });
-});
-
 router.post('/api/register', (req, res, next) => {
   console.log(' -------------- hit /api/signup')
 
