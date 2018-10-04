@@ -1,6 +1,6 @@
 import React from 'react';
 import API from "../../utils/API";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 class Register extends React.Component {
 
