@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 class Profile extends React.Component {
 
@@ -10,7 +11,7 @@ class Profile extends React.Component {
           <div className="row">
 
             <div className="col s12 m6">
-
+        
               <div className="card blue-grey darken-1">
 
                 <div className="card-content white-text">
@@ -19,14 +20,11 @@ class Profile extends React.Component {
                 </div>
 
                 <div className="card-action">
-                  <a href="#"></a>
-                  <a href="#"></a>
-                </div>
-                <div className="row">
+                  <Link to="">This is a link</Link>
+                  <Link to="">This is a link</Link>
                 </div>
                 
               </div> {/* end of card */}
-
             </div> {/* end of column */}
 
             <div className="col s12 m6">
@@ -39,17 +37,13 @@ class Profile extends React.Component {
                 </div>
 
                 <div className="card-action">
-                  <a href="#"></a>
-                  <a href="#"></a>
+                  <Link to="">This is a link</Link>
+                  <Link to="">This is a link</Link>
                 </div>
-                <div className="row">
-                </div>
-                
 
               </div> {/* end of card */}
-
             </div> {/* end of column */}
-
+        
           </div> {/* end of end of row */}
 
         </div>
