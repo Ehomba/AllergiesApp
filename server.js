@@ -18,7 +18,10 @@ const PORT = process.env.PORT || 3001;
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/mern-starter';
 
 mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect(MONGODB_URI, {
+  useCreateIndex: true,
+  useNewUrlParser: true
+});
 //SR Corrected^^
 
 app.use(bodyParser.json()
@@ -29,7 +32,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/client/public/index.html'));
 });
 
-app.use('/api', apiRoutes);
+app.use(apiRoutes);
 
 // Connect to the Mongo DB
 // mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userList");
