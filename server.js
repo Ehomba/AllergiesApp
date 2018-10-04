@@ -11,7 +11,7 @@ const apiRoutes = require('./route/user.js');
 // require('./src/lib/server').start();
 
 const app = express();
-const router = express.Router();
+// const router = express.Router();
 
 // env variables
 const PORT = process.env.PORT || 3001;
@@ -24,13 +24,10 @@ app.use(bodyParser.json()
   // ,cors()
 );
 
-
-
-app.get('*', (request, response) => {
-
-  res.sendFile(path.join(__dirname + 'client/public/index.html'));
-
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/client/public/index.html'));
 });
+
 app.use('/api', apiRoutes);
 
 // Connect to the Mongo DB
