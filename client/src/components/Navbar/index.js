@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 const Navbar = props => (
 
-    <nav>
-        <div classname="nav-wrapper">
+    <nav className="navbar">
+        <div className="nav-wrapper">
 
-            <Link classname="brand-logo" to="/">Nose News</Link>
+            <Link className="brand-logo" to="/">Nose News</Link>
 
-            <ul id="nav-mobile" classname="right hide-on-med-and-down">
+            <ul id="nav-mobile" className="right hide-on-med-and-down">
 
                 {/* The following link will be to the user's profile, which lists their active allergies and severity, and gives a daily report of environmental allergens. */}
                 <li><Link to="/profile">The Daily</Link></li>
