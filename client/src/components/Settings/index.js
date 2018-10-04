@@ -7,6 +7,20 @@ class Settings extends React.Component {
     render() {
         return (
             <div>
+
+                <div className="row">
+                    <div className="col s6 offset-s6">
+                        <table>
+                            <tr>
+                                <td className="severity">No Reaction</td>
+                                <td className="severity">Mild</td>
+                                <td className="severity">Moderate</td>
+                                <td className="severity">Life-Threatening</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
                 <div className="row">
                     <div className="col s6 allergen">Mold</div>
                     <div className="col s6">
@@ -36,7 +50,7 @@ class Settings extends React.Component {
                 </div>
             
                 <div className="row">
-                    <div className="col s12 m6">
+                    <div className="col s12">
                         <div className="card blue-grey darken-1">
                             <div className="card-content white-text">
                                 <span className="card-title">Card Title</span>
