@@ -1,11 +1,15 @@
 import React from 'react';
 import Slide from '../Slide';
-import { Link } from "react-router-dom";
+
+// commenting out Link until we have a need for it --mandie
+// import { Link } from "react-router-dom";
 
 
 class Settings extends React.Component {
+    
     render() {
         return (
+
             <div>
 
                 <div className="row">
@@ -28,35 +32,39 @@ class Settings extends React.Component {
                                 <div className="row">
                                     <div className="col s6 allergen">Mold</div>
                                     <div className="col s6">
-                                        <Slide />
+                                        <Slide name="Mold" />
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col s6 allergen">Pollen</div>
                                     <div className="col s6">
-                                        <Slide />
+                                        <Slide name="Pollen" />
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col s6 allergen">Cedar</div>
                                     <div className="col s6">
-                                        <Slide />
+                                        <Slide name="Cedar" />
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col s6 allergen">Dust Mites</div>
                                     <div className="col s6">
-                                        <Slide />
+                                        <Slide name="Dust Mites" />
                                     </div>
                                 </div>
 
                             </div>
-                        </div>
-                    </div>
-                </div>
+
+                        </div> {/* end of card */}
+
+                    </div> {/* end of column */}
+
+                </div> {/* end of row */}
+
             </div>
         );
     };
