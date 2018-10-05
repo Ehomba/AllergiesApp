@@ -19,8 +19,7 @@ const Navbar = props => (
                 {/* The following link will be to the user's profile, which lists their active allergies and severity, and gives a daily report of environmental allergens. */}
                 <li><Link to="/profile">The Daily</Link></li>
 
-                {/* A page for the user to change their allergy information and any other settings we add in. */}
-                <li><Link to="/settings">Settings</Link></li>
+                
 
                 <li><Link to="/">Log Out</Link></li>
                 
@@ -31,7 +30,8 @@ const Navbar = props => (
 
     <ul className="sidenav" id="mobile-demo">
         <li><Link to="/profile">The Daily</Link></li>
-        <li><Link to="/settings">Settings</Link></li>
+        
+        
         <li><Link to="/">Log Out</Link></li>
     </ul>
 
