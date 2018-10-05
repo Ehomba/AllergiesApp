@@ -7,43 +7,47 @@ import Slider from '@material-ui/lab/Slider';
 
 const styles = {
   root: {
-    width: 150,
+    width: 200,
   },
 };
 
 class StepSlider extends React.Component {
   state = {
-    value: 0,
-    severity: "None"
-  };
+    word: "None"
+  }
 
-  handleChange = (event, value, severity) => {
-    this.setState({ value });
+  onChange = (event, value) => {
+    const data = {
+      name: this.props.name,
+      value: value
+    }
+    this.props.handleChange(data);
 
+    let word;
     switch(value) {
       default:
-        severity = "None";
+        word = "None";
         break;
       case 1:
-        severity = "Mild";
+        word = "Mild";
         break;
       case 2:
-        severity = "Moderate to Severe";
+        word = "Moderate to Severe";
         break;
       case 3:
-        severity = "Life-Threatening";
+        word = "Life-Threatening";
     }
 
-    this.setState({ severity });
-  };
+    this.setState({ word: word })
+  }
 
   render() {
     const { classes } = this.props;
-    const { value } = this.state;
+    // const { value } = this.state;
 
     return (
       <div className={classes.root}>
-        <Slider value={value} min={0} max={3} step={1} onChange={this.handleChange} />{this.state.severity}
+        <Slider name={this.props.name} value={this.props.state[this.props.name]} min={0} max={3} step={1} onChange={this.onChange} />{this.state.word}
       </div>
     );
   }
