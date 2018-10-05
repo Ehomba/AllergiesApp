@@ -2,7 +2,7 @@
 
 const express = require('express');
 const router = express.Router();
-const User = require('../model/user.js');
+const User = require('../model/User.js');
 // const basicAuth = require('../lib/basic-auth-middleware.js');
 
 router.post('/api/register', (req, res, next) => {
