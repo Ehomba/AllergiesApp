@@ -14,10 +14,27 @@ const styles = {
 class StepSlider extends React.Component {
   state = {
     value: 0,
+    severity: "None"
   };
 
-  handleChange = (event, value) => {
+  handleChange = (event, value, severity) => {
     this.setState({ value });
+
+    switch(value) {
+      default:
+        severity = "None";
+        break;
+      case 1:
+        severity = "Mild";
+        break;
+      case 2:
+        severity = "Moderate to Severe";
+        break;
+      case 3:
+        severity = "Life-Threatening";
+    }
+
+    this.setState({ severity });
   };
 
   render() {
@@ -26,7 +43,7 @@ class StepSlider extends React.Component {
 
     return (
       <div className={classes.root}>
-        <Slider value={value} min={0} max={3} step={1} onChange={this.handleChange} />
+        <Slider value={value} min={0} max={3} step={1} onChange={this.handleChange} />{this.state.severity}
       </div>
     );
   }

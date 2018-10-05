@@ -6,7 +6,7 @@ import Slide from '../Slide';
 
 
 class Settings extends React.Component {
-    
+
     render() {
         return (
 

@@ -11,7 +11,7 @@ const Navbar = props => (
 
             <Link className="brand-logo" to="/">Nose News</Link>
             <Link to="#" data-target="mobile-demo" className="sidenav-trigger">
-            <i class="material-icons">menu</i>
+            <i className="material-icons">menu</i>
             </Link>
 
             <ul id="nav-mobile" className="right hide-on-med-and-down">
