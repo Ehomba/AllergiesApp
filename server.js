@@ -28,11 +28,14 @@ app.use(bodyParser.json()
   // ,cors()
 );
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/client/public/index.html'));
-});
+app.use(express.static(path.join(__dirname + '/client/build/')))
 
 app.use(apiRoutes);
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/client/build/index.html'));
+});
+
 
 // Connect to the Mongo DB
 // mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userList");
