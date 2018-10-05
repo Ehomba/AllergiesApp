@@ -3,9 +3,33 @@ import Form from '../Form';
 import { Link } from "react-router-dom";
 
 class Login extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  // }
+  state = {
+    username: "",
+    password: "",
+  };
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  };
+  handleFormSubmit = event => {
+    event.preventDefault();
+    console.log("handleFormSubmit");
+    console.log({
+      username: this.state.username,
+      password: this.state.password
+    });
+    if (this.state.username && this.state.email) {
+      console.log("asdfasdf");
+      API.getUser({
+        username: this.state.username,
+        password: this.state.password
+      })
+      .then(data => console.log(data))
+        .catch(err => console.log(err));
+    }
+  };
 
   render() {
     return (
