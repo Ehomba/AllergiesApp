@@ -7,11 +7,14 @@ import Slide from '../Slide';
 
 class Settings extends React.Component {
     state = {
-        pollen: 0,
+        animalDander: 0,
         dustMites: 0,
-        cedar: 0,
+        insectStings: 0,
+        latex: 0,
+        meds: 0,
+        mold: 0,
         peanuts: 0,
-        mold: 0
+        pollen: 0,
     };
 
     handleChange = (data) => {
@@ -36,37 +39,48 @@ class Settings extends React.Component {
 
                                 <span className="card-title">Your Allergens</span>
 
-                                <p>Record your allergens and their severities by moving the slider to the most appropriate setting. Don't forget to save any changes!</p>
+                                <p>Record your allergens and their severities by moving the slider to the most appropriate setting. Don't forget to save your changes!</p>
 
-                            </div>
+                            {/* </div>
 
-                            <div className="card-action">
+                            <div className="card-action"> */}
+
+                                <h5>Environmental Allergens</h5>
+
+                                <table>
+
+                                    <tr>
+                                        <td className="allergen">Animal Dander</td>
+                                        <td><Slide state={this.state} name="animalDander" handleChange={this.handleChange} /></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td className="allergen">Mold</td>
+                                        <td><Slide state={this.state} name="mold" handleChange={this.handleChange} /></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td className="allergen">Pollen</td>
+                                        <td><Slide state={this.state} name="pollen" handleChange={this.handleChange} /></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td className="allergen">Dust Mites</td>
+                                        <td><Slide state={this.state} name="dustMites" handleChange={this.handleChange} /></td>
+                                    </tr>
+                                    
+                                </table>
+                            
+                            {/* </div>
+
+                            <div className="card-action"> */}
+
+                                <h5>Ingested Allergens</h5>
 
                                 <div className="row">
-                                    <div className="col s4 allergen">Mold</div>
+                                    <div className="col s4 allergen">Medications</div>
                                     <div className="col s8">
-                                        <Slide name="mold" state={this.state} handleChange={this.handleChange} />
-                                    </div>
-                                </div>
-
-                                <div className="row">
-                                    <div className="col s4 allergen">Pollen</div>
-                                    <div className="col s8">
-                                        <Slide state={this.state} name="pollen" handleChange={this.handleChange}/>
-                                    </div>
-                                </div>
-
-                                <div className="row">
-                                    <div className="col s4 allergen">Cedar</div>
-                                    <div className="col s8">
-                                        <Slide state={this.state} name="cedar" handleChange={this.handleChange} />
-                                    </div>
-                                </div>
-
-                                <div className="row">
-                                    <div className="col s4 allergen">Dust Mites</div>
-                                    <div className="col s8">
-                                        <Slide state={this.state} name="dustMites" handleChange={this.handleChange} />
+                                        <Slide state={this.state} name="meds" handleChange={this.handleChange} />
                                     </div>
                                 </div>
 
