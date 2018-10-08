@@ -40,7 +40,7 @@ class Register extends React.Component {
         return (
 
       <div className="container" id="register">
-        <h4>Registration</h4>
+        <h4 className="black-text">Registration</h4>
         <div id="register-page" className="row">
           <div className="col s12 z-depth-6 card-panel">
             <form className="register-form">
@@ -83,7 +83,7 @@ class Register extends React.Component {
               </div>
               <div className="row center-align">
                 <div className="input-field col s12">
-                  <Link to="/profile" className="btn waves-effect waves-light amber accent-4  col s12" id="register-btn" disabled={!(this.state.password === this.state.passwordMatch)} onClick={this.handleFormSubmit} >Register Now</Link>
+                  <Link to="/profile" className="btn waves-effect waves-light amber accent-4 black-text col s12" id="register-btn" disabled={!(this.state.password === this.state.passwordMatch)} onClick={this.handleFormSubmit} >Register Now</Link>
                 </div>
               </div>
             </form>

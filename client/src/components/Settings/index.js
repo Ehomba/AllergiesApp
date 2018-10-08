@@ -36,17 +36,17 @@ class Settings extends React.Component {
 
             <div>
 
-                <div className="row">
+                {/* <div className="row"> */}
 
-                    <div className="col s12 m6">
+                    <div className="col s12 m3">
 
-                        <div className="card blue-grey darken-1">
+                        <div className="card blue-grey lighten-5" id="allergens">
 
-                            <div className="card-content white-text">
+                            <div className="card-content black-text">
 
                                 <span className="card-title">Your Allergens</span>
 
-                                <p>Record your allergens and their severities by moving the slider to the most appropriate setting. Don't forget to save your changes!</p>
+                                <p className="description">Record your allergens and their severities by moving the slider to the most appropriate setting. Don't forget to save any changes!</p>
 
                             {/* </div>
 
@@ -55,21 +55,21 @@ class Settings extends React.Component {
                                 <h5>Environmental Allergens</h5>
 
                                 <div className="row">
-                                    <div className="col s4 allergen">Animal Dander</div>
+                                    <div className="col s4 allergen black-text">Animal Dander</div>
                                     <div className="col s8">
                                         <Slide state={this.state} name="animalDander" handleChange={this.handleChange} />
                                     </div>
                                 </div>
 
                                 <div className="row">
-                                    <div className="col s4 allergen">Mold</div>
+                                    <div className="col s4 black-text allergen">Mold</div>
                                     <div className="col s8">
                                         <Slide state={this.state} name="mold" handleChange={this.handleChange} />
                                     </div>
                                 </div>
 
                                 <div className="row">
-                                    <div className="col s4 allergen">Pollen</div>
+                                    <div className="col s4 black-text allergen">Pollen</div>
                                     <div className="col s8">
                                         <Slide state={this.state} name="pollen" handleChange={this.handleChange} />
                                     </div>
@@ -91,16 +91,22 @@ class Settings extends React.Component {
                                 <h5>Ingested Allergens</h5>
 
                                 <div className="row">
-                                    <div className="col s4 allergen">Medications</div>
+                                    <div className="col s4 black-text allergen">Medications</div>
                                     <div className="col s8">
                                         <Slide state={this.state} name="meds" handleChange={this.handleChange} />
                                     </div>
                                 </div>
 
                                 <div className="row">
-                                    <div className="col s4 allergen">Peanuts</div>
+                                    <div className="col s4 black-text allergen">Peanuts</div>
                                     <div className="col s8">
                                         <Slide state={this.state} name="peanuts" handleChange={this.handleChange} />
+                                    </div>
+                                </div>
+
+                                <div className="row">
+                                    <div className="col s12 center-align">
+                                    <a class="waves-effect waves-light btn blue darken-3">Save Changes</a>
                                     </div>
                                 </div>
 
@@ -112,7 +118,7 @@ class Settings extends React.Component {
 
                     </div> {/* end of column */}
 
-                </div> {/* end of row */}
+                {/* </div> end of row */}
 
             </div>
         );
