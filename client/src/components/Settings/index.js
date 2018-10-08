@@ -44,35 +44,35 @@ class Settings extends React.Component {
 
                                 <div className="row">
                                     <div className="col s4 black-text allergen">Mold</div>
-                                    <div className="col s8">
+                                    <div className="col s8 black-text">
                                         <Slide name="mold" state={this.state} handleChange={this.handleChange} />
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col s4 black-text allergen">Pollen</div>
-                                    <div className="col s8">
+                                    <div className="col s8 black-text">
                                         <Slide state={this.state} name="pollen" handleChange={this.handleChange}/>
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col s4 black-text allergen">Cedar</div>
-                                    <div className="col s8">
+                                    <div className="col s8 black-text">
                                         <Slide state={this.state} name="cedar" handleChange={this.handleChange} />
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col s4 black-text allergen">Dust Mites</div>
-                                    <div className="col s8">
+                                    <div className="col s8 black-text">
                                         <Slide state={this.state} name="dustMites" handleChange={this.handleChange} />
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col s4 black-text allergen">Peanuts</div>
-                                    <div className="col s8">
+                                    <div className="col s8 black-text">
                                         <Slide state={this.state} name="peanuts" handleChange={this.handleChange} />
                                     </div>
                                 </div>
