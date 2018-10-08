@@ -6,30 +6,33 @@ class Profile extends React.Component {
   render() {
     return (
       <div>
-        <Settings />
-
+        
         <div className="row">
 
-          <div className="col s12 m6">
+        <div className="col m1"></div>
+       
+        <Settings />
 
-            <div className="card blue-grey darken-1">
 
+          <div className="col s12 m7">
+
+            <div className="card transparent" id="weather">
+            <iframe src="https://weather.com/forecast/allergy/l/USTX0057:1:US" id="allergy-tracker"></iframe>
               <div className="card-content white-text">
-                <span className="card-title"></span>
-                <p></p>
+              
               </div>
 
               <div className="card-action">
                 {/* <a href=""></a> */}
                 {/* <a href="#"></a> */}
               </div>
-              <div className="row">
-              </div>
 
 
             </div> {/* end of card */}
 
           </div> {/* end of column */}
+
+          <div className="col m1"></div>
 
         </div> {/* end of end of row */}
 

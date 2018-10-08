@@ -9,7 +9,7 @@ const Navbar = props => (
 
         <div className="nav-wrapper">
 
-            <Link className="brand-logo" to="/">Nose News</Link>
+            <Link className="brand-logo black-text" to="/">Nose News</Link>
             <Link to="#" data-target="mobile-demo" className="sidenav-trigger">
             <i className="material-icons">menu</i>
             </Link>
@@ -17,11 +17,11 @@ const Navbar = props => (
             <ul id="nav-mobile" className="right hide-on-med-and-down">
 
                 {/* The following link will be to the user's profile, which lists their active allergies and severity, and gives a daily report of environmental allergens. */}
-                <li><Link to="/profile">The Daily</Link></li>
+                <li><Link to="/profile" className="black-text">The Daily</Link></li>
 
                 
 
-                <li><Link to="/">Log Out</Link></li>
+                <li><Link to="/" className="black-text">Log Out</Link></li>
                 
             </ul>
 
