@@ -4,33 +4,42 @@ const express = require('express');
 const mongoose = require('mongoose');
 const router = express.Router();
 const User = require('../model/User.js');
+const passport = require('passport');
 // const basicAuth = require('../lib/basic-auth-middleware.js');
 
 router.post('/api/register', (req, res, next) => {
-  console.log(' -------------- hit /api/signup')
+  passport.authenticate('user-register',(err, user, info)=>{
+    if(err){ return next(err)}
+    if(!user){return res.json({user: false})}
+    req.logIn(user, function(err){
+      if(err){return next(err)}
+      return res.json({user: true})
+    });
+  })(req, res, next)
 
-  User.create(req.body)
-    .then(token => {
-      console.log("created user");
-      res.send(token);
-    })
-    .catch(next)
+  
 })
 
 router.post('/api/allergens', (req, res) => {
   console.log('allergens request received');
-  console.log(req.body);
+  console.log(req.user[0], "----- in alllergies");
+  const currentUserId = req.user[0]._id;
   debugger;
-  User.findOneAndUpdate({ _id: mongoose.Types.ObjectId("5bbb7ded1627ca46742db4b0")}, req.body)
+  User.findOneAndUpdate({ _id: currentUserId}, req.body)
   .then(() => console.log("database updated"));
 })
 
-// router.get('/login', basicAuth, (req, res, next) => {
-//   console.log('hit /api/login')
-
-//   req.user.tokenCreate()
-//   .then(token => res.send(token))
-//   .catch(next)basic-auth-middleware.
-// })
+router.post('/login',  (req, res, next) => {
+  passport.authenticate('user-login',(err,user, info)=>{
+    if (err) { return next(err)}
+    if(!user) {return res.json({auth: false});}
+    req.logIn(user, function(err){
+      console.log("in req Login ----------")
+      if(err) {return next(err)}
+      console.log(user, "user in req login")
+       res.json({isUser: true, user: user});
+    })
+  })(req,res, next);
+})
 
 module.exports = router
