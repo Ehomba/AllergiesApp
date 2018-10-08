@@ -30,7 +30,7 @@ class Settings extends React.Component {
 
                     <div className="col s12 m3">
 
-                        <div className="card blue-grey lighten-5">
+                        <div className="card blue-grey lighten-5" id="allergens">
 
                             <div className="card-content black-text">
 
