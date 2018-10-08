@@ -1,6 +1,6 @@
 import React from 'react';
 import Settings from '../Settings';
-import "./Calender/Calender.css"
+
 class Profile extends React.Component {
 
   render() {
