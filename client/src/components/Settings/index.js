@@ -1,5 +1,6 @@
 import React from 'react';
 import Slide from '../Slide';
+import API from '../../utils/API';
 
 // commenting out Link until we have a need for it --mandie
 // import { Link } from "react-router-dom";
@@ -7,11 +8,14 @@ import Slide from '../Slide';
 
 class Settings extends React.Component {
     state = {
-        pollen: 0,
+        animalDander: 0,
         dustMites: 0,
-        cedar: 0,
+        insectStings: 0,
+        latex: 0,
+        meds: 0,
+        mold: 0,
         peanuts: 0,
-        mold: 0
+        pollen: 0,
     };
 
     handleChange = (data) => {
@@ -20,6 +24,12 @@ class Settings extends React.Component {
           [name]: value
         });
     };
+
+    submitAllergens = () => {
+        console.log("button clicked");
+        API.saveAllergies(this.state);
+    }
+
 
     render() {
         return (
@@ -38,28 +48,30 @@ class Settings extends React.Component {
 
                                 <p className="description">Record your allergens and their severities by moving the slider to the most appropriate setting. Don't forget to save any changes!</p>
 
-                            </div>
+                            {/* </div>
 
-                            <div className="card-action">
+                            <div className="card-action"> */}
+
+                                <h5>Environmental Allergens</h5>
+
+                                <div className="row">
+                                    <div className="col s4 allergen black-text">Animal Dander</div>
+                                    <div className="col s8">
+                                        <Slide state={this.state} name="animalDander" handleChange={this.handleChange} />
+                                    </div>
+                                </div>
 
                                 <div className="row">
                                     <div className="col s4 black-text allergen">Mold</div>
                                     <div className="col s8">
-                                        <Slide name="mold" state={this.state} handleChange={this.handleChange} />
+                                        <Slide state={this.state} name="mold" handleChange={this.handleChange} />
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col s4 black-text allergen">Pollen</div>
                                     <div className="col s8">
-                                        <Slide state={this.state} name="pollen" handleChange={this.handleChange}/>
-                                    </div>
-                                </div>
-
-                                <div className="row">
-                                    <div className="col s4 black-text allergen">Cedar</div>
-                                    <div className="col s8">
-                                        <Slide state={this.state} name="cedar" handleChange={this.handleChange} />
+                                        <Slide state={this.state} name="pollen" handleChange={this.handleChange} />
                                     </div>
                                 </div>
 
@@ -67,6 +79,15 @@ class Settings extends React.Component {
                                     <div className="col s4 black-text allergen">Dust Mites</div>
                                     <div className="col s8">
                                         <Slide state={this.state} name="dustMites" handleChange={this.handleChange} />
+                                    </div>
+                                </div>
+
+                                <h5>Ingested Allergens</h5>
+
+                                <div className="row">
+                                    <div className="col s4 black-text allergen">Medications</div>
+                                    <div className="col s8">
+                                        <Slide state={this.state} name="meds" handleChange={this.handleChange} />
                                     </div>
                                 </div>
 
@@ -79,7 +100,7 @@ class Settings extends React.Component {
 
                                 <div className="row">
                                     <div className="col s12 center-align">
-                                    <a class="waves-effect waves-light btn blue darken-3">Save Changes</a>
+                                    <button onClick={this.submitAllergens} className="waves-effect waves-light btn blue darken-3">Save Changes</button>
                                     </div>
                                 </div>
 
