@@ -75,18 +75,12 @@ class Settings extends React.Component {
                                     </div>
                                 </div>
 
-                                <table>
-                                    
-                                    <tr>
-                                        <td className="allergen">Dust Mites</td>
-                                        <td><Slide state={this.state} name="dustMites" handleChange={this.handleChange} /></td>
-                                    </tr>
-                                    
-                                </table>
-                            
-                            {/* </div>
-
-                            <div className="card-action"> */}
+                                <div className="row">
+                                    <div className="col s4 black-text allergen">Dust Mites</div>
+                                    <div className="col s8">
+                                        <Slide state={this.state} name="dustMites" handleChange={this.handleChange} />
+                                    </div>
+                                </div>
 
                                 <h5>Ingested Allergens</h5>
 
@@ -106,13 +100,11 @@ class Settings extends React.Component {
 
                                 <div className="row">
                                     <div className="col s12 center-align">
-                                    <a class="waves-effect waves-light btn blue darken-3">Save Changes</a>
+                                    <button onClick={this.submitAllergens} className="waves-effect waves-light btn blue darken-3">Save Changes</button>
                                     </div>
                                 </div>
 
                             </div>
-
-                            <button onClick={this.submitAllergens}>Save</button>
 
                         </div> {/* end of card */}
 
