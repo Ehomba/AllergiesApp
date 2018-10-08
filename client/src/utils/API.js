@@ -9,5 +9,8 @@ export default {
   saveUser: function(userRegister) {
     console.log("Axios saveUser");
     return axios.post("/api/register", userRegister);
+  },
+  saveAllergies: function(allergySeverities) {
+    return axios.post("/api/allergens", allergySeverities);
   }
 };

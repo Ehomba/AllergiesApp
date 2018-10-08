@@ -28,7 +28,12 @@ app.use(bodyParser.json()
   // ,cors()
 );
 
-app.use(express.static(path.join(__dirname + '/client/build/')))
+if(process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname + '/client/build/')));
+}
+else {
+  app.use(express.static(path.join(__dirname + '/client/public/')));
+}
 
 app.use(apiRoutes);
 

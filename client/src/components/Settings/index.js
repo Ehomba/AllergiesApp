@@ -1,5 +1,6 @@
 import React from 'react';
 import Slide from '../Slide';
+import API from '../../utils/API';
 
 // commenting out Link until we have a need for it --mandie
 // import { Link } from "react-router-dom";
@@ -24,6 +25,12 @@ class Settings extends React.Component {
         });
     };
 
+    submitAllergens = () => {
+        console.log("button clicked");
+        API.saveAllergies(this.state);
+    }
+
+
     render() {
         return (
 
@@ -47,22 +54,28 @@ class Settings extends React.Component {
 
                                 <h5>Environmental Allergens</h5>
 
+                                <div className="row">
+                                    <div className="col s4 allergen">Animal Dander</div>
+                                    <div className="col s8">
+                                        <Slide state={this.state} name="animalDander" handleChange={this.handleChange} />
+                                    </div>
+                                </div>
+
+                                <div className="row">
+                                    <div className="col s4 allergen">Mold</div>
+                                    <div className="col s8">
+                                        <Slide state={this.state} name="mold" handleChange={this.handleChange} />
+                                    </div>
+                                </div>
+
+                                <div className="row">
+                                    <div className="col s4 allergen">Pollen</div>
+                                    <div className="col s8">
+                                        <Slide state={this.state} name="pollen" handleChange={this.handleChange} />
+                                    </div>
+                                </div>
+
                                 <table>
-
-                                    <tr>
-                                        <td className="allergen">Animal Dander</td>
-                                        <td><Slide state={this.state} name="animalDander" handleChange={this.handleChange} /></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td className="allergen">Mold</td>
-                                        <td><Slide state={this.state} name="mold" handleChange={this.handleChange} /></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td className="allergen">Pollen</td>
-                                        <td><Slide state={this.state} name="pollen" handleChange={this.handleChange} /></td>
-                                    </tr>
                                     
                                     <tr>
                                         <td className="allergen">Dust Mites</td>
@@ -92,6 +105,8 @@ class Settings extends React.Component {
                                 </div>
 
                             </div>
+
+                            <button onClick={this.submitAllergens}>Save</button>
 
                         </div> {/* end of card */}
 
