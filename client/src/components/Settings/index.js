@@ -1,3 +1,4 @@
+/* global M */
 import React from 'react';
 import Slide from '../Slide';
 import API from '../../utils/API';
@@ -17,6 +18,11 @@ class Settings extends React.Component {
         peanuts: 0,
         pollen: 0,
     };
+    
+    componentDidMount = () => {
+            const elems = document.querySelectorAll('.modal');
+            M.Modal.init(elems);
+    }
 
     handleChange = (data) => {
         const { name, value } = data;
@@ -77,7 +83,7 @@ class Settings extends React.Component {
 
                                 <div className="row">
                                     <div className="col s4 black-text allergen">Dust Mites</div>
-                                    <div className="col s8">
+                                    <div className="col s8 black-text">
                                         <Slide state={this.state} name="dustMites" handleChange={this.handleChange} />
                                     </div>
                                 </div>
@@ -93,14 +99,14 @@ class Settings extends React.Component {
 
                                 <div className="row">
                                     <div className="col s4 black-text allergen">Peanuts</div>
-                                    <div className="col s8">
+                                    <div className="col s8 black-text">
                                         <Slide state={this.state} name="peanuts" handleChange={this.handleChange} />
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col s12 center-align">
-                                    <button onClick={this.submitAllergens} className="waves-effect waves-light btn blue darken-3">Save Changes</button>
+                                    <button onClick={this.submitAllergens} className="waves-effect waves-light btn modal-trigger blue darken-3" data-target="modal1">Save Changes</button>
                                     </div>
                                 </div>
 
@@ -112,6 +118,15 @@ class Settings extends React.Component {
 
                 {/* </div> end of row */}
 
+                <div id="modal1" className="modal">
+                <div className="modal-content">
+                  <h4 className="black-text center-align">Changes Saved!</h4>
+                </div>
+                <div className="modal-footer">
+                  <a href="#!" className="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+
             </div>
         );
     };
@@ -121,3 +136,4 @@ class Settings extends React.Component {
 
 
 export default Settings;
+
