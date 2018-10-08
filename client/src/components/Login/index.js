@@ -24,7 +24,7 @@ class Login extends React.Component {
                 </div>
                 <Form />
                 <div className="card-action center">
-                  <Link to="/Register">Don't have an account? Register here.</Link>
+                  <Link to="/register">Don't have an account? Register here.</Link>
                 </div>
               </div>
             </div>
