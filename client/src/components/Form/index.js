@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Form = props => (
     <div className="card-content">
@@ -15,7 +16,8 @@ const Form = props => (
       </div>
     </div>
     <div className="row center-align">
-      <button className="btn waves-effect waves-light amber accent-4" id="login-button" type="submit" name="action">Login
+      <button className="btn waves-effect waves-light amber accent-4" id="login-button" type="submit" name="action">
+        <Link to="/profile">Login</Link>
         <i className="material-icons right">send</i>
       </button>
     </div>
