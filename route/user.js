@@ -8,6 +8,7 @@ const passport = require('passport');
 // const basicAuth = require('../lib/basic-auth-middleware.js');
 
 router.post('/api/register', (req, res, next) => {
+
   passport.authenticate('user-register',(err, user, info)=>{
     if(err){ return next(err)}
     if(!user){return res.json({user: false})}
@@ -17,14 +18,12 @@ router.post('/api/register', (req, res, next) => {
     });
   })(req, res, next)
 
-  
 })
 
 router.post('/api/allergens', (req, res) => {
   console.log('allergens request received');
-  console.log(req.user[0], "----- in alllergies");
+  console.log(req.user[0], "----- in allergies");
   const currentUserId = req.user[0]._id;
-  debugger;
   User.findOneAndUpdate({ _id: currentUserId}, req.body)
   .then(() => console.log("database updated"));
 })

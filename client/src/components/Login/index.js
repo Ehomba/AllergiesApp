@@ -14,7 +14,7 @@ class Login extends React.Component {
           <div className="col s12 m12 l12">
             <div className="card horizontal z-depth-5">
               <div className="card-image hide-on-med-and-down">
-                <img alt="fall nature scene" src="http://www.freegreatpicture.com/files/59/26908-high-resolution-photo-flowers.jpg" width="600px" height="750px" />
+                <img alt="fall nature scene" src="https://images.unsplash.com/photo-1445962125599-30f582ac21f4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38c096c472ba616dc4e8e76a8069c97a&auto=format&fit=crop&w=500&q=60.jpg" width="600px" height="750px" />
               </div>
               <div className="card-stacked">
                 <div className="row center-align">
@@ -24,7 +24,7 @@ class Login extends React.Component {
                 </div>
                 <Form />
                 <div className="card-action center">
-                  <Link to="/Register">Don't have an account? Register here.</Link>
+                  <Link to="/register">Don't have an account? Register here.</Link>
                 </div>
               </div>
             </div>

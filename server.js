@@ -29,7 +29,7 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/mern-starter
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI, {
-  useCreateIndex: true,
+  //useCreateIndex: true,
   useNewUrlParser: true
 });
 //SR Corrected^^

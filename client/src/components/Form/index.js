@@ -1,7 +1,9 @@
 import React from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 class Form extends React.Component{
+
   constructor(props){
    super(props)
     this.state = {
@@ -41,17 +43,15 @@ class Form extends React.Component{
         </div>
       </div>
       <div className="row center-align">
-        <button onClick={this.submit.bind(this)} className="btn waves-effect waves-light amber accent-4" id="login-button" type="submit" name="action">Login
+        <button onClick={this.submit.bind(this)} className="btn waves-effect waves-light amber accent-4" id="login-button" type="submit" name="action">
+          <Link to="/profile">Login</Link>
           <i className="material-icons right">send</i>
         </button>
       </div>
     </div>
     )
   }
- 
 
 }
-
-
 
 export default Form; 
