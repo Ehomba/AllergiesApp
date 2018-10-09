@@ -8,10 +8,20 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 const apiRoutes = require('./route/user.js');
+const cookieSession = require('cookie-session');
+const passport = require('passport');
+const passportSetup = require('./config/passport-setup');
 // require('./src/lib/server').start();
 
 const app = express();
 // const router = express.Router();
+app.use(cookieSession({
+    maxAge: 24 * 60 * 60 * 1000,
+    keys: ["miles"]
+}))
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 // env variables
 const PORT = process.env.PORT || 3001;
