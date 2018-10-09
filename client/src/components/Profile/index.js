@@ -1,5 +1,6 @@
 import React from 'react';
 import Settings from '../Settings';
+
 class Profile extends React.Component {
 
   render() {
