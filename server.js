@@ -16,8 +16,8 @@ const passportSetup = require('./config/passport-setup');
 const app = express();
 // const router = express.Router();
 app.use(cookieSession({
-    maxAge: 24 * 60 * 60 * 1000,
-    keys: ["miles"]
+  maxAge: 24 * 60 * 60 * 1000,
+  keys: ["miles"]
 }))
 
 app.use(passport.initialize());
@@ -37,13 +37,15 @@ mongoose.connect(MONGODB_URI, {
 app.use(bodyParser.json()
   // ,cors()
 );
+// *************************
+app.use(express.static(path.join(__dirname + '/client/build/')))
 
-if(process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname + '/client/build/')));
-}
-else {
-  app.use(express.static(path.join(__dirname + '/client/public/')));
-}
+// if(process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.join(__dirname + '/client/build/')));
+// }
+// else {
+//   app.use(express.static(path.join(__dirname + '/client/public/')));
+// }
 
 app.use(apiRoutes);
 
